@@ -2,7 +2,6 @@
 
 base_dir="/home/methionin/CASF-2016/coreset"
 log_file="receptor_failures.log"
-> "$log_file"  # eski logu temizle
 
 find "$base_dir" -type f -name "*_protein.pdb" | while read -r pdb_file; do
     base_name="${pdb_file%.pdb}"
